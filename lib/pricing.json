@@ -1,31 +1,18 @@
 {
   "currency": "€",
-  "baseServices": {
-    "implant": {
-      "name": "Комплекс Імплант + Корона",
-      "basePrice": 790,
-      "description": "Фіксований пакет: хірургічний етап, фірмовий імплант, анестезія, формувач ясен та цирконієва корона."
-    },
-    "invisalign": {
-      "name": "Елайнери Invisalign Full",
-      "basePrice": 2850,
-      "description": "Повний курс прозорих кап Invisalign з 3D-моделюванням ClinCheck та наглядом ортодонта."
-    },
-    "brackets": {
-      "name": "Ортодонтія керамічними брекетами",
-      "basePrice": 1290,
-      "description": "Естетичні керамічні брекети на обидві щелепи включно з контрольно-діагностичними прийомами."
-    },
-    "hygiene": {
-      "name": "Комплексна ультразвукова чистка",
-      "basePrice": 45,
-      "description": "Зняття зубного каменю ультразвуком, полірування та фторування емалі."
-    }
+  "basePrices": {
+    "implantPackage": 790,
+    "bracketsMetal": 1290,
+    "invisalignLite": 1850,
+    "invisalignFull": 2850,
+    "crownZirconia": 450,
+    "cleaning": 60,
+    "whitening": 280,
+    "veneerKeramic": 390
   },
-  "addons": {
-    "scan3D": { "name": "3D КТ щелепи та інтраоральне сканування", "price": 0, "included": true },
-    "academicConsult": { "name": "Консиліум з викладачем Universidad de La Salle", "price": 0, "included": true },
-    "sedation": { "name": "Комп'ютерна седація / Релакс-протокол", "price": 120, "included": false },
-    "whiteningAddon": { "name": "Фотовідбілювання після чистки", "price": 180, "included": false }
+  "marketComparisons": {
+    "implantPackage": 1400,
+    "bracketsMetal": 2200,
+    "invisalignFull": 4200
   }
 }

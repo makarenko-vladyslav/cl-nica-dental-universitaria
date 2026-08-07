@@ -1,146 +1,146 @@
 "use client";
-
-import { useLocale } from '@/lib/i18n';
-import { Reveal, Stagger, StaggerItem } from '@/components/motion';
+import React from "react";
+import { useLocale } from "@/lib/i18n";
+import { Reveal, Stagger, StaggerItem } from "./motion";
 
 export default function AcademicTrust() {
   const { t } = useLocale();
-
-  const kicker = String(t('trust.kicker'));
-  const title = String(t('trust.title'));
-  const subtitle = String(t('trust.subtitle'));
-
-  const pullQuote = String(t('trust.pullQuote'));
-  const stat1 = String(t('trust.stat1'));
-  const stat1Label = String(t('trust.stat1Label'));
-  const stat2 = String(t('trust.stat2'));
-  const stat2Label = String(t('trust.stat2Label'));
-  const stat3 = String(t('trust.stat3'));
-  const stat3Label = String(t('trust.stat3Label'));
-  const stat4 = String(t('trust.stat4'));
-  const stat4Label = String(t('trust.stat4Label'));
-
-  const namedDoctor = String(t('trust.namedDoctor'));
-  const namedRole = String(t('trust.namedRole'));
-  const photoCaption = String(t('trust.photoCaption'));
-  const secondaryLink = String(t('trust.secondaryLink'));
-
-  const p1Title = String(t('trust.point1Title'));
-  const p1Desc = String(t('trust.point1Desc'));
-  const p2Title = String(t('trust.point2Title'));
-  const p2Desc = String(t('trust.point2Desc'));
-  const p3Title = String(t('trust.point3Title'));
-  const p3Desc = String(t('trust.point3Desc'));
+  const items = (t("trustBanner.items") as Array<{ num: string; title: string; desc: string }>) || [];
 
   return (
-    <section id="trust" className="py-20 sm:py-24 bg-[var(--color-primary)] text-white relative overflow-hidden">
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 relative z-10">
+    <section id="academic" className="py-20 sm:py-28 bg-hsl-light text-hsl-main relative overflow-hidden">
+      
+      {/* Decorative Watermark */}
+      <div 
+        aria-hidden="true" 
+        className="absolute top-10 right-0 font-display text-[12vw] font-black text-hsl-main/[0.03] whitespace-nowrap pointer-events-none select-none z-0"
+      >
+        ACADEMIC CARE
+      </div>
+
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
         
-        {/* Section Heading Header */}
-        <Reveal className="max-w-3xl mb-12">
-          <span className="text-xs font-display font-semibold uppercase tracking-widest text-[var(--color-accent)] block mb-3">
-            {kicker}
-          </span>
-          <h2 className="text-2xl sm:text-4xl font-display font-extrabold tracking-tight mb-4 text-white">
-            {title}
-          </h2>
-          <p className="text-sm sm:text-base text-white/80 leading-relaxed">
-            {subtitle}
-          </p>
-        </Reveal>
+        {/* Section Header */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-end mb-16">
+          <div className="lg:col-span-8">
+            <Reveal>
+              <span className="text-[0.65rem] font-bold uppercase tracking-[0.25em] text-accent block mb-2">
+                {t("trustBanner.kicker") as string}
+              </span>
+            </Reveal>
+            <Reveal delay={0.1}>
+              <h2 className="font-display text-2xl sm:text-4xl font-extrabold text-hsl-main leading-tight">
+                {t("trustBanner.title") as string}
+              </h2>
+            </Reveal>
+          </div>
+          <div className="lg:col-span-4">
+            <Reveal delay={0.2}>
+              <p className="text-xs sm:text-sm text-hsl-muted leading-relaxed border-l-2 border-accent pl-4">
+                {t("trustBanner.description") as string}
+              </p>
+            </Reveal>
+          </div>
+        </div>
 
-        {/* Oversized Statement Line / Pull-Quote */}
-        <Reveal delay={0.2} className="p-6 sm:p-8 rounded-2xl bg-white/5 border-l-4 border-[var(--color-accent)] border-y border-r border-white/10 mb-16">
-          <blockquote className="text-base sm:text-xl font-display font-medium text-white italic leading-relaxed">
-            «{pullQuote}»
-          </blockquote>
-          <div className="mt-4 flex items-center justify-between text-xs text-white/70 pt-3 border-t border-white/10">
-            <span className="font-bold text-[var(--color-accent)]">{namedDoctor}</span>
-            <span>{namedRole}</span>
-          </div>
-        </Reveal>
-
-        {/* 4 Stat Numerals Row */}
-        <Reveal delay={0.3} className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16 pb-12 border-b border-white/10">
-          <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-            <div className="text-3xl font-display font-extrabold text-[var(--color-accent)] font-mono tabular-nums">{stat1}</div>
-            <div className="text-xs text-white/70 mt-1">{stat1Label}</div>
-          </div>
-          <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-            <div className="text-3xl font-display font-extrabold text-[var(--color-accent)] font-mono tabular-nums">{stat2}</div>
-            <div className="text-xs text-white/70 mt-1">{stat2Label}</div>
-          </div>
-          <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-            <div className="text-3xl font-display font-extrabold text-[var(--color-accent)] font-mono tabular-nums">{stat3}</div>
-            <div className="text-xs text-white/70 mt-1">{stat3Label}</div>
-          </div>
-          <div className="p-4 rounded-xl bg-white/5 border border-white/10">
-            <div className="text-3xl font-display font-extrabold text-[var(--color-accent)] font-mono tabular-nums">{stat4}</div>
-            <div className="text-xs text-white/70 mt-1">{stat4Label}</div>
+        {/* Pull-Quote Statement */}
+        <Reveal delay={0.2} className="mb-16">
+          <div className="bg-hsl-alt p-8 sm:p-10 rounded-2xl border border-hsl-border-light text-center max-w-4xl mx-auto">
+            <p className="font-display font-bold text-lg sm:text-2xl text-hsl-main leading-snug italic">
+              «Ми поєднали академічні стандарти кафедри із доступністю для кожного пацієнта»
+            </p>
+            <div className="mt-4 text-xs font-bold uppercase tracking-widest text-accent">
+              Dr. Juan Carlos Vara — засновник EDE Posgrados
+            </div>
           </div>
         </Reveal>
 
-        {/* 3 Pillars Grid */}
-        <Stagger className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
-          <StaggerItem>
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--color-accent)] transition-all h-full flex flex-col justify-between">
-              <div>
-                <div className="text-3xl font-display font-bold text-[var(--color-accent)] mb-4 font-mono">01</div>
-                <h3 className="text-lg font-display font-bold text-white mb-3">
-                  {p1Title}
-                </h3>
-                <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-                  {p1Desc}
-                </p>
+        {/* Stat Cards Grid (4 items) */}
+        <Stagger className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          {items.map((item, idx) => (
+            <StaggerItem key={idx}>
+              <div className="bg-white p-8 rounded-2xl border border-hsl-border-light shadow-sm hover:shadow-md transition-all h-full flex flex-col justify-between group">
+                <div>
+                  <div className="font-display font-extrabold text-4xl sm:text-5xl text-accent mb-4 group-hover:scale-105 transition-transform origin-left tabular-nums">
+                    {item.num}
+                  </div>
+                  <h3 className="font-display font-bold text-base text-hsl-main mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-xs text-hsl-muted leading-relaxed">
+                    {item.desc}
+                  </p>
+                </div>
+                <div className="mt-6 pt-4 border-t border-hsl-border-light text-[0.65rem] font-bold uppercase tracking-widest text-accent">
+                  Стандарт університету
+                </div>
               </div>
-              <div className="mt-8 pt-4 border-t border-white/10 text-[10px] uppercase tracking-widest text-[var(--color-accent)] font-semibold">
-                Universidad de La Salle & EDE
-              </div>
-            </div>
-          </StaggerItem>
-
-          <StaggerItem>
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--color-accent)] transition-all h-full flex flex-col justify-between">
-              <div>
-                <div className="text-3xl font-display font-bold text-[var(--color-accent)] mb-4 font-mono">02</div>
-                <h3 className="text-lg font-display font-bold text-white mb-3">
-                  {p2Title}
-                </h3>
-                <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-                  {p2Desc}
-                </p>
-              </div>
-              <div className="mt-8 pt-4 border-t border-white/10 text-[10px] uppercase tracking-widest text-[var(--color-accent)] font-semibold">
-                Сертифікований Цирконій & Титан
-              </div>
-            </div>
-          </StaggerItem>
-
-          <StaggerItem>
-            <div className="p-8 rounded-2xl bg-white/5 border border-white/10 hover:border-[var(--color-accent)] transition-all h-full flex flex-col justify-between">
-              <div>
-                <div className="text-3xl font-display font-bold text-[var(--color-accent)] mb-4 font-mono">03</div>
-                <h3 className="text-lg font-display font-bold text-white mb-3">
-                  {p3Title}
-                </h3>
-                <p className="text-xs sm:text-sm text-white/70 leading-relaxed">
-                  {p3Desc}
-                </p>
-              </div>
-              <div className="mt-8 pt-4 border-t border-white/10 text-[10px] uppercase tracking-widest text-[var(--color-accent)] font-semibold">
-                Гарантія відсутності прихованих чеків
-              </div>
-            </div>
-          </StaggerItem>
+            </StaggerItem>
+          ))}
         </Stagger>
 
-        {/* Photo Caption-with-Rule & Secondary Link */}
-        <Reveal className="flex flex-col sm:flex-row items-center justify-between gap-4 pt-6 border-t border-white/10 text-xs text-white/60">
-          <p className="italic">— {photoCaption}</p>
-          <a href="#team" className="font-display font-bold text-[var(--color-accent)] hover:underline">
-            {secondaryLink}
-          </a>
-        </Reveal>
+        {/* 2-Photo Cluster + Affiliation Banner */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+          
+          {/* Overlapping Photo Cluster */}
+          <div className="lg:col-span-6 relative">
+            <Reveal>
+              <div className="relative rounded-2xl overflow-hidden border border-hsl-border-light shadow-lg aspect-[4/3]">
+                <img
+                  src="https://clinicadentaluniversitaria.com/wp-content/uploads/2025/07/odontologia-general-en-madrid-768x454.jpg"
+                  alt="3D Dental Laboratory Madrid"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
+                <div className="absolute bottom-4 left-4 right-4 text-white text-xs font-bold uppercase tracking-wider">
+                  Клінічна база 3D-моделювання · Moncloa
+                </div>
+              </div>
+            </Reveal>
+
+            {/* Overlapped Sub-Photo */}
+            <div className="hidden sm:block absolute -bottom-6 -right-6 w-1/2 rounded-2xl overflow-hidden border-4 border-white shadow-2xl aspect-[4/3]">
+              <img
+                src="https://clinicadentaluniversitaria.com/wp-content/uploads/2025/10/Implante-790-768x453.jpg"
+                alt="Implant procedure"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </div>
+
+          {/* Academic Affiliation Card */}
+          <div className="lg:col-span-6">
+            <Reveal delay={0.2}>
+              <div className="bg-hsl-dark text-white p-8 sm:p-10 rounded-3xl border border-hsl-border-dark shadow-2xl">
+                <div className="text-[0.65rem] uppercase font-bold tracking-[0.25em] text-accent mb-4">
+                  ОФІЦІЙНИЙ ПАРТНЕР
+                </div>
+                <h3 className="font-display font-extrabold text-xl sm:text-2xl text-white mb-4">
+                  Universidad de La Salle & EDE Posgrados
+                </h3>
+                <p className="text-xs sm:text-sm text-white/70 leading-relaxed mb-8">
+                  Клініка діє як науково-практична база Мадрида. Усі процедури схвалюються кафедральним комітетом оральної хірургії та ортодонтії.
+                </p>
+
+                <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4">
+                  <a
+                    href="#contact"
+                    className="bg-accent hover:bg-accent-hover text-white font-extrabold text-xs uppercase tracking-widest px-6 py-3.5 rounded-xl transition-all text-center"
+                  >
+                    Записатися до професора
+                  </a>
+                  <a
+                    href="#team"
+                    className="text-white/80 hover:text-white text-xs font-bold uppercase tracking-wider text-center py-2"
+                  >
+                    Переглянути склад фахівців
+                  </a>
+                </div>
+              </div>
+            </Reveal>
+          </div>
+
+        </div>
 
       </div>
     </section>

@@ -1,5 +1,4 @@
 "use client";
-
 import { createContext, useContext, useState, useCallback, type ReactNode } from 'react';
 import content from '@/lib/content.json';
 
@@ -45,7 +44,7 @@ export function LocaleProvider({ children }: { children: ReactNode }) {
     }
     
     if (val !== undefined) return val;
-
+    
     // Fallback to defaultLocale
     val = locales[content.defaultLocale];
     for (const k of keys) {

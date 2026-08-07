@@ -1,17 +1,20 @@
 @import "tailwindcss";
 
 @theme {
-  --color-primary: hsl(215 35% 12%);
-  --color-primary-light: hsl(215 25% 20%);
-  --color-accent: hsl(175 88% 38%);
-  --color-accent-hover: hsl(175 88% 30%);
-  --color-accent-soft: hsl(175 40% 93%);
-  --color-bg-dark: hsl(215 35% 9%);
-  --color-bg-light: hsl(200 25% 98%);
-  --color-surface-white: hsl(0 0% 100%);
-  --color-text-main: hsl(215 30% 16%);
-  --color-text-muted: hsl(215 15% 45%);
-  --color-border-subtle: hsl(215 20% 90%);
+  --color-primary: hsl(215 50% 15%);
+  --color-primary-dark: hsl(215 55% 9%);
+  --color-accent: hsl(175 80% 36%);
+  --color-accent-hover: hsl(175 85% 30%);
+  --color-accent-light: hsl(175 70% 94%);
+  --color-bg-light: hsl(210 20% 97%);
+  --color-bg-alt: hsl(210 22% 93%);
+  --color-bg-dark: hsl(215 45% 9%);
+  --color-card-bg: hsl(210 15% 99%);
+  --color-text-main: hsl(215 35% 14%);
+  --color-text-muted: hsl(215 15% 42%);
+  --color-border-light: hsl(210 18% 88%);
+  --color-border-dark: hsl(215 30% 18%);
+  
   --font-display: 'Unbounded', sans-serif;
   --font-body: 'Geist', sans-serif;
 }
@@ -19,18 +22,19 @@
 @layer base {
   html {
     font-size: 16px;
-    font-family: var(--font-body);
+    scroll-behavior: smooth;
   }
-  
   @media (max-width: 1920px) { html { font-size: 0.833333vw; } }
   @media (max-width: 1440px) { html { font-size: 1.111111vw; } }
-  @media (max-width: 1024px) { html { font-size: 1.5625vw; } }
-  @media (max-width: 640px) { html { font-size: 4.444444vw; } }
+  @media (max-width: 1024px) { html { font-size: 1.4vw; } }
+  @media (max-width: 640px)  { html { font-size: 4.2vw; } }
 
   body {
+    font-family: var(--font-body);
     background-color: var(--color-bg-light);
     color: var(--color-text-main);
     overflow-x: hidden;
+    -webkit-font-smoothing: antialiased;
   }
 
   h1, h2, h3, h4, .font-display {
@@ -38,20 +42,19 @@
   }
 }
 
-/* Custom Keyframe Animations */
-@keyframes float {
-  0%, 100% { transform: translateY(0px); }
-  50% { transform: translateY(-8px); }
-}
-
 @keyframes marquee {
   0% { transform: translateX(0%); }
   100% { transform: translateX(-50%); }
 }
 
-@keyframes rotateSlow {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 35s linear infinite;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
 }
 
 @keyframes pulseGlow {
@@ -59,29 +62,34 @@
   50% { opacity: 0.8; transform: scale(1.05); }
 }
 
-.animate-float {
-  animation: float 6s ease-in-out infinite;
-}
-
-.animate-marquee {
-  animation: marquee 35s linear infinite;
-}
-
-.animate-rotate-slow {
-  animation: rotateSlow 24s linear infinite;
-}
-
 .animate-pulse-glow {
   animation: pulseGlow 4s ease-in-out infinite;
 }
 
-/* Custom Accessibility Focus State */
-:focus-visible {
-  outline: 2px solid var(--color-accent);
-  outline-offset: 3px;
+@keyframes spinSlow {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
-/* Reduced Motion Fallback */
+.animate-spin-slow {
+  animation: spinSlow 20s linear infinite;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: hsl(215 45% 9%);
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(175 80% 36% / 0.5);
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(175 80% 36%);
+}
+
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
@@ -89,12 +97,12 @@
     transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
+  .animate-marquee, .animate-spin-slow {
+    animation: none !important;
+  }
 }
 
-/* Glassmorphism utility for hero badge on dark media */
-.glass-panel {
-  background: hsl(215 35% 12% / 0.82);
-  backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
-  border: 1px solid hsl(175 88% 38% / 0.25);
+:focus-visible {
+  outline: 2px solid var(--color-accent);
+  outline-offset: 3px;
 }

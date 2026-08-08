@@ -1,192 +1,179 @@
 "use client";
-import React from "react";
+
 import { useLocale } from "@/lib/i18n";
-import { Reveal } from "./motion";
+import { Reveal } from "@/components/motion";
 
 export default function Hero() {
   const { t } = useLocale();
 
   return (
-    <section className="relative min-h-[100svh] flex flex-col justify-between pt-28 pb-12 overflow-hidden bg-hsl-dark text-white">
-      {/* Layer 1: Background Video + Dark Scrim */}
-      <div className="absolute inset-0 z-0 overflow-hidden">
+    <section className="relative min-h-[100svh] pt-28 pb-16 flex flex-col justify-between overflow-hidden bg-bg-dark text-white">
+      {/* Layer 1: Background Video Stack with Clinical Scrim */}
+      <div className="absolute inset-0 z-0">
         <video
           autoPlay
           muted
           loop
           playsInline
           poster="https://images.pexels.com/videos/6630465/clinic-dental-doctor-health-care-6630465.jpeg?auto=compress&cs=tinysrgb&fit=crop&h=630&w=1200"
-          className="w-full h-full object-cover scale-105 opacity-30 transition-opacity duration-1000"
+          className="w-full h-full object-cover opacity-35 scale-105"
         >
           <source src="https://videos.pexels.com/video-files/6630465/6630465-hd_1366_720_25fps.mp4" type="video/mp4" />
         </video>
-        <div className="absolute inset-0 bg-gradient-to-b from-hsl-dark/90 via-hsl-dark/75 to-hsl-dark" />
+        <div className="absolute inset-0 bg-gradient-to-t from-bg-dark via-bg-dark/75 to-bg-dark/50" />
       </div>
 
-      {/* Layer 2: Giant Decorative Type Layer (Watermark) */}
-      <div 
-        aria-hidden="true" 
-        className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 font-display text-[14vw] font-black text-white/[0.025] whitespace-nowrap pointer-events-none select-none z-0"
-      >
-        LA SALLE MADRID
+      {/* Layer 2: Giant Decorative Background Watermark Word (Zero Height Contribution) */}
+      <div className="absolute inset-0 flex items-center justify-center overflow-hidden pointer-events-none select-none aria-hidden z-0">
+        <span className="font-serif-display font-bold text-[15vw] leading-none text-white/[0.03] uppercase whitespace-nowrap tracking-tighter">
+          UNIVERSIDAD
+        </span>
       </div>
 
-      {/* Layer 3: Atmospheric Glow Orbs */}
-      <div className="absolute top-1/4 left-10 w-96 h-96 bg-accent/20 rounded-full blur-3xl pointer-events-none animate-pulse-glow z-0" />
-      <div className="absolute bottom-10 right-10 w-80 h-80 bg-blue-500/10 rounded-full blur-3xl pointer-events-none z-0" />
+      {/* Main Container */}
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto py-8">
+        
+        {/* Layer 3: Top Meta Bar Strip */}
+        <div className="flex flex-wrap items-center justify-between gap-4 pb-6 mb-8 border-b border-white/10 text-xs text-white/80 font-medium">
+          <div className="flex items-center gap-3">
+            <span className="w-2 h-2 rounded-full bg-accent-glow animate-pulse" />
+            <span className="uppercase tracking-widest font-semibold text-accent-light">
+              {String(t("hero.kicker"))}
+            </span>
+          </div>
+          <div className="hidden md:flex items-center gap-6 text-[0.7rem] uppercase tracking-wider text-white/70">
+            <span>Atención: L-V 09:00 - 20:00h</span>
+            <span className="text-white/30">·</span>
+            <span>Calle Alberto Aguilera · Moncloa</span>
+            <span className="text-white/30">·</span>
+            <span className="text-accent-light font-bold">Reseñas: 4.5/5★ (159 Google)</span>
+          </div>
+        </div>
 
-      {/* Layer 4: Main Content Grid */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full my-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
           
-          {/* Main Text Block */}
-          <div className="lg:col-span-8 flex flex-col items-start">
+          {/* Main Content Column (7 Cols) */}
+          <div className="lg:col-span-7 flex flex-col items-start relative">
             
-            {/* Layer 5: Kicker with REAL Meta */}
-            <Reveal>
-              <div className="inline-flex items-center gap-3 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full border border-white/20 text-[0.7rem] font-bold tracking-widest text-accent uppercase mb-6">
-                <span className="w-2 h-2 rounded-full bg-accent animate-ping" />
-                <span>{t("hero.kicker") as string}</span>
-              </div>
-            </Reveal>
+            {/* Layer 4: Floating Text-Only Seal Badge */}
+            <div className="hidden sm:flex absolute -top-6 -right-4 w-24 h-24 rounded-full border border-accent/40 items-center justify-center p-2 text-center pointer-events-none">
+              <span className="text-[0.55rem] font-bold uppercase tracking-widest text-accent-light leading-tight animate-spin-slow">
+                · CLÍNICA UNIVERSITARIA MADRID · CÁTEDRA LA SALLE ·
+              </span>
+            </div>
 
-            {/* Layer 6: Display Headline with Styling Accent */}
+            {/* Layer 5: Display Poster H1 */}
             <Reveal delay={0.1}>
-              <h1 className="font-display text-3xl sm:text-5xl lg:text-6xl font-extrabold text-white leading-[1.08] tracking-tight mb-6">
-                Академічна стоматологія з <span className="text-accent underline decoration-2 underline-offset-4">фіксованими</span> цінами до 50% нижче ринкових
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-serif-display font-bold leading-[1.08] text-white mb-6">
+                {String(t("hero.h1First"))}{" "}
+                <span className="italic font-normal text-accent-light block mt-2">
+                  {String(t("hero.h1Italic"))}
+                </span>
               </h1>
             </Reveal>
 
-            {/* Layer 7: Subtitle / Lede */}
+            {/* Layer 6: Lede Paragraph */}
             <Reveal delay={0.2}>
-              <p className="text-sm sm:text-lg text-white/80 max-w-2xl font-normal leading-relaxed mb-8">
-                {t("hero.subtitle") as string}
+              <p className="text-base sm:text-lg text-white/85 font-body leading-relaxed max-w-2xl mb-8">
+                {String(t("hero.subtitle"))}
               </p>
             </Reveal>
 
-            {/* Layer 8: CTA Pair */}
+            {/* Layer 7: CTA Pair (Solid Button + Quiet Text Link) */}
             <Reveal delay={0.3}>
-              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 w-full sm:w-auto mb-10">
+              <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-5 w-full sm:w-auto">
                 <a
-                  href="#contact"
-                  className="bg-accent hover:bg-accent-hover text-white font-extrabold text-xs uppercase tracking-widest px-8 py-4 rounded-xl shadow-xl shadow-accent/25 transition-all transform hover:-translate-y-0.5 text-center flex items-center justify-center gap-2"
+                  href="#reservar"
+                  className="bg-accent hover:bg-accent-glow text-white font-bold text-xs uppercase tracking-widest px-8 py-4 rounded shadow-xl transition-all duration-200 text-center hover:-translate-y-0.5"
                 >
-                  <span>{t("hero.ctaPrimary") as string}</span>
+                  {String(t("hero.ctaPrimary"))}
                 </a>
                 <a
-                  href="#calculator"
-                  className="bg-white/10 hover:bg-white/20 text-white font-bold text-xs uppercase tracking-widest px-7 py-4 rounded-xl border border-white/25 transition-all text-center backdrop-blur-sm"
+                  href="#tratamientos"
+                  className="text-white/90 hover:text-accent-light font-semibold text-xs uppercase tracking-wider py-3 transition text-center underline underline-offset-8 decoration-accent/50"
                 >
-                  {t("hero.ctaSecondary") as string}
+                  {String(t("hero.ctaSecondary"))} →
                 </a>
               </div>
             </Reveal>
 
-            {/* Layer 9: Flanking Mini-Copy Columns */}
-            <Reveal delay={0.4} className="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-6 border-t border-white/10 w-full max-w-2xl text-xs text-white/70">
-              <div className="border-l border-accent/60 pl-3">
-                <span className="font-bold text-white block mb-0.5">Академічна база La Salle</span>
-                <span>Нагляд магістерського комітету оральної хірургії</span>
-              </div>
-              <div className="border-l border-accent/60 pl-3">
-                <span className="font-bold text-white block mb-0.5">Фіксований пакет 790€</span>
-                <span>Імплант + цирконієва корона без прихованих платежів</span>
-              </div>
-            </Reveal>
-
-          </div>
-
-          {/* Right Column: Featured Offer Card + Rotating Text Seal */}
-          <div className="lg:col-span-4 hidden lg:flex flex-col items-end gap-6">
-            
-            {/* Layer 10: Rotating Circular Text Seal */}
-            <div className="relative w-28 h-28 flex items-center justify-center">
-              <svg className="w-full h-full animate-spin-slow text-accent opacity-80" viewBox="0 0 100 100">
-                <path id="sealPath" d="M 50, 50 m -37, 0 a 37,37 0 1,1 74,0 a 37,37 0 1,1 -74,0" fill="none" />
-                <text className="text-[9.5px] font-bold tracking-widest uppercase fill-current font-display">
-                  <textPath href="#sealPath">
-                    CLINICA DENTAL UNIVERSITARIA • LA SALLE MADRID •
-                  </textPath>
-                </text>
-              </svg>
-              <div className="absolute font-display font-extrabold text-xs text-white">
-                MADRID
-              </div>
-            </div>
-
-            {/* Price Card */}
-            <Reveal delay={0.3} className="w-full">
-              <div className="bg-white/10 backdrop-blur-xl p-8 rounded-3xl border border-white/20 shadow-2xl relative overflow-hidden group">
-                <div className="absolute -right-10 -bottom-10 w-40 h-40 bg-accent/30 rounded-full blur-2xl group-hover:scale-125 transition-transform" />
-                
-                <div className="flex items-center justify-between mb-6">
-                  <span className="text-[0.65rem] uppercase font-bold tracking-widest text-accent bg-accent/20 px-3 py-1 rounded-full">
-                    ПАКЕТ РОКУ
-                  </span>
-                  <span className="text-[0.7rem] text-white/60 font-semibold uppercase tracking-wider">Moncloa-Aravaca</span>
+            {/* Layer 8: Two Flanking Mini-Copy Columns */}
+            <Reveal delay={0.4} className="mt-10 pt-6 border-t border-white/15 w-full">
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 text-xs text-white/75 leading-relaxed">
+                <div>
+                  <span className="text-accent-light font-bold block mb-1 uppercase tracking-wider">Supervisión Catedrática</span>
+                  Cada diagnóstico y cirugía es validado activamente por profesores titulares de posgrado.
                 </div>
-
-                <div className="mb-6">
-                  <span className="text-[0.7rem] uppercase tracking-wider text-white/70 block mb-1">
-                    Імплант + Цирконієва Корона
-                  </span>
-                  <div className="flex items-baseline gap-3">
-                    <span className="font-display font-extrabold text-5xl text-white tabular-nums">790€</span>
-                    <span className="text-lg text-white/50 line-through font-medium tabular-nums">1400€</span>
-                  </div>
-                  <span className="text-xs text-emerald-400 font-semibold mt-1 block">
-                    Економія до 50% від ринкової ціни
-                  </span>
+                <div>
+                  <span className="text-accent-light font-bold block mb-1 uppercase tracking-wider">Ahorro Real Docente</span>
+                  Precios universitarios hasta un 50% inferiores por ausencia de margen comercial privado.
                 </div>
-
-                <div className="space-y-3 text-xs text-white/90 mb-8 pb-6 border-b border-white/15">
-                  <div className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    <span>Сертифікований дентальний імплант</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    <span>Міцна цирконієва корона та абутмент</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    <span>Анестезія та первинний КТ 3D-знімок</span>
-                  </div>
-                  <div className="flex items-center gap-2">
-                    <span className="w-1.5 h-1.5 rounded-full bg-accent" />
-                    <span>Контроль професорів La Salle</span>
-                  </div>
-                </div>
-
-                <a
-                  href="#contact"
-                  className="w-full block text-center bg-white text-hsl-dark font-extrabold text-xs uppercase tracking-widest py-3.5 rounded-xl hover:bg-accent hover:text-white transition-all"
-                >
-                  Забронювати ціну 790€
-                </a>
               </div>
             </Reveal>
 
           </div>
 
+          {/* Layer 9: Offer Highlight Floating Card (5 Cols) */}
+          <div className="lg:col-span-5">
+            <Reveal delay={0.2}>
+              <div className="relative rounded-xl bg-bg-card text-text-main p-8 shadow-2xl border-2 border-accent/40">
+                <div className="flex items-center justify-between mb-4 pb-3 border-b border-primary/10">
+                  <span className="text-[0.65rem] uppercase tracking-widest font-bold text-accent px-3 py-1 bg-accent/10 rounded">
+                    Campaña Docente 2026
+                  </span>
+                  <span className="text-xs text-text-muted font-bold tabular-nums">Moncloa-Aravaca</span>
+                </div>
+
+                <h3 className="text-2xl font-serif-display font-bold text-primary mb-2">
+                  {String(t("hero.badgeTitle"))}
+                </h3>
+
+                <div className="flex items-baseline gap-3 my-4">
+                  <span className="text-5xl font-serif-display font-bold text-accent tabular-nums">
+                    790€
+                  </span>
+                  <span className="text-lg text-text-muted line-through tabular-nums">1.200€</span>
+                  <span className="text-[0.7rem] font-bold text-emerald-800 bg-emerald-100 px-2 py-0.5 rounded">
+                    -34% Tarifa
+                  </span>
+                </div>
+
+                <p className="text-xs text-text-muted mb-6 leading-relaxed">
+                  {String(t("hero.badgeSubtitle"))}
+                </p>
+
+                <div className="space-y-2.5 text-xs text-text-main font-semibold mb-8 border-t border-primary/10 pt-4">
+                  <div className="flex items-center justify-between">
+                    <span>Titanio Biomédico UE:</span>
+                    <span className="text-accent">Incluido</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Corona Estética Porcelana:</span>
+                    <span className="text-accent">Incluido</span>
+                  </div>
+                  <div className="flex items-center justify-between">
+                    <span>Estudio Radiológico 3D TAC:</span>
+                    <span className="text-accent">0€ Extra</span>
+                  </div>
+                </div>
+
+                <a
+                  href="#reservar"
+                  className="block w-full text-center bg-primary hover:bg-primary/90 text-white font-bold text-xs uppercase tracking-widest py-3.5 rounded shadow transition"
+                >
+                  Solicitar Cita con este Precio
+                </a>
+              </div>
+            </Reveal>
+          </div>
+
         </div>
       </div>
 
-      {/* Layer 11: 3-Item Meta Strip */}
-      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full mt-6">
-        <div className="py-4 border-y border-white/10 flex flex-wrap items-center justify-between gap-y-2 text-[0.75rem] font-bold uppercase tracking-widest text-white/80 tabular-nums">
-          <div>ПН – ПТ: 09:00 – 20:00</div>
-          <div className="hidden sm:block text-white/30">|</div>
-          <div>CALLE DE ALBERTO AGUILERA, 23 · MADRID</div>
-          <div className="hidden sm:block text-white/30">|</div>
-          <div className="text-amber-400">4.5 / 5.0 GOOGLE MAPS (159 ВІДГУКІВ)</div>
-        </div>
-      </div>
-
-      {/* Layer 12: Scroll Cue */}
-      <div className="relative z-10 hidden sm:flex flex-col items-center gap-2 mt-6 opacity-60 hover:opacity-100 transition-opacity">
-        <span className="text-[0.6rem] uppercase tracking-[0.3em] text-white/80 font-bold">SCROLL</span>
-        <div className="w-0.5 h-5 bg-gradient-to-b from-white via-white/50 to-transparent animate-pulse" />
+      {/* Layer 10: Scroll Cue in Normal Flow (Bottom Center, Tiny Font + Short Fading Line) */}
+      <div className="relative z-10 py-2 flex flex-col items-center gap-1.5 text-center pointer-events-none">
+        <span className="text-[0.55rem] uppercase tracking-widest font-bold text-white/70">SCROLL</span>
+        <div className="w-0.5 h-5 bg-gradient-to-b from-accent to-transparent rounded-full animate-pulse" />
       </div>
     </section>
   );

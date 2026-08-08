@@ -1,93 +1,103 @@
 "use client";
-import React from "react";
+
 import { useLocale } from "@/lib/i18n";
 
 export default function Footer() {
   const { t } = useLocale();
 
   return (
-    <footer className="bg-hsl-dark text-white pt-20 pb-12 border-t border-hsl-border-dark relative overflow-hidden">
+    <footer className="bg-bg-dark text-white pt-20 pb-12 border-t border-white/10 select-none">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         
-        {/* Giant Full-Width Display Wordmark Bleeding Off Edge */}
-        <div className="border-b border-white/10 pb-12 mb-12 overflow-hidden">
-          <span className="font-display font-extrabold text-4xl sm:text-7xl lg:text-8xl text-white/10 block tracking-tighter leading-none select-none whitespace-nowrap">
-            CLÍNICA DENTAL UNIVERSITARIA MADRID
-          </span>
+        {/* Layer 1: Giant Full-Width Brand Wordmark Bleeding off Edge */}
+        <div className="border-b border-white/10 pb-12 mb-12">
+          <div className="font-serif-display font-bold text-3xl sm:text-5xl lg:text-6xl tracking-tight text-white/95 uppercase">
+            Clínica Dental Universitaria
+          </div>
+          <p className="text-accent-light text-xs mt-3 max-w-2xl font-body leading-relaxed opacity-90">
+            {String(t("footer.brandDesc"))}
+          </p>
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-16 text-xs">
+        {/* 4 Columns Nav & Details */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12 text-xs">
           
-          {/* Col 1 */}
+          {/* Nav Column */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
-              <div className="w-8 h-8 rounded bg-accent flex items-center justify-center text-white font-display font-extrabold text-base">
-                U
-              </div>
-              <span className="font-display font-extrabold text-sm">Clínica Dental Universitaria</span>
-            </div>
-            <p className="text-white/60 leading-relaxed mb-4">
-              {t("footer.tagline") as string}
-            </p>
-            <p className="text-white/40 text-[0.65rem]">
-              {t("footer.academicNote") as string}
-            </p>
-          </div>
-
-          {/* Col 2 */}
-          <div>
-            <h4 className="font-display font-bold text-xs text-white uppercase tracking-widest mb-4">Навігація</h4>
+            <h4 className="font-serif-display font-bold text-white text-sm mb-4">
+              {String(t("footer.col1Title"))}
+            </h4>
             <ul className="space-y-2.5 text-white/70">
-              <li><a href="#services" className="hover:text-accent transition-colors">Послуги та ціни</a></li>
-              <li><a href="#academic" className="hover:text-accent transition-colors">Університетська модель</a></li>
-              <li><a href="#calculator" className="hover:text-accent transition-colors">Калькулятор лікування</a></li>
-              <li><a href="#team" className="hover:text-accent transition-colors">Академічний склад</a></li>
-              <li><a href="#reviews" className="hover:text-accent transition-colors">Відгуки пацієнтів</a></li>
+              <li><a href="#tratamientos" className="hover:text-accent transition">Implante + Corona Cerámica (790€)</a></li>
+              <li><a href="#tratamientos" className="hover:text-accent transition">Ortodoncia Invisalign® Full (2.850€)</a></li>
+              <li><a href="#tratamientos" className="hover:text-accent transition">Ortodoncia Brackets (1.290€)</a></li>
+              <li><a href="#tratamientos" className="hover:text-accent transition">Estética y Carillas de Porcelana</a></li>
+              <li><a href="#tratamientos" className="hover:text-accent transition">Endodoncia bajo Microscopio</a></li>
             </ul>
           </div>
 
-          {/* Col 3 */}
+          {/* Academic Guarantees */}
           <div>
-            <h4 className="font-display font-bold text-xs text-white uppercase tracking-widest mb-4">Контакти Мадрид</h4>
-            <ul className="space-y-2.5 text-white/70 tabular-nums">
-              <li>Calle de Alberto Aguilera, Madrid</li>
-              <li>телефон: <a href="tel:+34919898700" className="hover:text-accent font-bold">+34 919 898 700</a></li>
-              <li>email: info@clinicadentaluniversitaria.es</li>
-              <li>Метро: Argüelles / San Bernardo</li>
-              <li>Пн–Пт: 09:00 – 20:00</li>
+            <h4 className="font-serif-display font-bold text-white text-sm mb-4">
+              {String(t("footer.col2Title"))}
+            </h4>
+            <ul className="space-y-2.5 text-white/70">
+              <li>Supervisión Catedrática la Salle</li>
+              <li>Materiales de Titanio Biocompatible UE</li>
+              <li>Garantía Académica Escrita</li>
+              <li>Diagnóstico Radiológico 3D TAC</li>
             </ul>
           </div>
 
-          {/* Col 4 */}
+          {/* Contact Column (Separate lines) */}
           <div>
-            <h4 className="font-display font-bold text-xs text-white uppercase tracking-widest mb-4">Соціальні мережі</h4>
-            <div className="flex flex-col gap-2 mb-6 text-white/70">
-              <a href="#" className="hover:text-accent transition-colors font-bold">[ INSTAGRAM ]</a>
-              <a href="#" className="hover:text-accent transition-colors font-bold">[ FACEBOOK ]</a>
-              <a href="#" className="hover:text-accent transition-colors font-bold">[ LINKEDIN ]</a>
+            <h4 className="font-serif-display font-bold text-white text-sm mb-4">
+              {String(t("footer.col3Title"))}
+            </h4>
+            <div className="space-y-2 text-white/70">
+              <p>Calle de Alberto Aguilera, Madrid</p>
+              <p>Moncloa - Aravaca - Chamberí</p>
+              <p className="text-accent font-bold tabular-nums">+34 919 898 700</p>
+              <p>info@clinicadentaluniversitaria.com</p>
             </div>
-            <a
-              href="#contact"
-              className="inline-block bg-accent hover:bg-accent-hover text-white font-extrabold text-[0.65rem] uppercase tracking-widest px-5 py-3 rounded-xl transition-all shadow"
-            >
-              Записатись онлайн
-            </a>
+          </div>
+
+          {/* Hours & Social Text Links Row */}
+          <div>
+            <h4 className="font-serif-display font-bold text-white text-sm mb-4">
+              Horario & Redes
+            </h4>
+            <p className="text-white/70 leading-relaxed mb-4">
+              Lunes a Viernes: 09:00 - 20:00h<br />Sábados: Cita Previa
+            </p>
+            
+            {/* Layer 5: Social Text Links Only */}
+            <div className="flex flex-wrap gap-3 text-[0.65rem] font-bold uppercase tracking-wider text-accent-light pt-2">
+              <a href="#" className="hover:underline">Instagram</a>
+              <span>·</span>
+              <a href="#" className="hover:underline">LinkedIn</a>
+              <span>·</span>
+              <a href="#" className="hover:underline">Google Maps</a>
+              <span>·</span>
+              <a href="#" className="hover:underline">Reseñas</a>
+            </div>
           </div>
 
         </div>
 
-        {/* Legal Row with Mandatory Developer Link */}
-        <div className="pt-8 border-t border-white/10 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-white/50">
-          <div>{t("footer.rights") as string}</div>
+        {/* Legal Row, Credit Meta Line, Hairline Dividers */}
+        <div className="border-t border-white/10 pt-8 flex flex-col sm:flex-row items-center justify-between text-[0.7rem] text-white/60 gap-4">
           <div>
-            <span>Розроблено </span>
+            {String(t("footer.rights"))}
+          </div>
+          <div className="text-right">
             <a
               href="https://makarich.framer.website"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-accent hover:underline font-bold"
+              className="hover:text-accent transition underline"
             >
-              Студія Тест
+              Desarrollado por Студія Тест — Odontología con rigor docente
             </a>
           </div>
         </div>

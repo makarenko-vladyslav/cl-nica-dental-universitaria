@@ -1,18 +1,45 @@
 {
   "currency": "€",
-  "basePrices": {
-    "implantPackage": 790,
-    "bracketsMetal": 1290,
-    "invisalignLite": 1850,
-    "invisalignFull": 2850,
-    "crownZirconia": 450,
-    "cleaning": 60,
-    "whitening": 280,
-    "veneerKeramic": 390
-  },
-  "marketComparisons": {
-    "implantPackage": 1400,
-    "bracketsMetal": 2200,
-    "invisalignFull": 4200
-  }
+  "services": [
+    {
+      "id": "implante_corona",
+      "name": "Implante + Corona Cerámica",
+      "basePrice": 790,
+      "marketPrice": 1200,
+      "unit": "pieza"
+    },
+    {
+      "id": "invisalign_full",
+      "name": "Ortodoncia Invisalign® Full",
+      "basePrice": 2850,
+      "marketPrice": 4200,
+      "unit": "tratamiento completo"
+    },
+    {
+      "id": "ortodoncia_brackets",
+      "name": "Ortodoncia Convencional Brackets",
+      "basePrice": 1290,
+      "marketPrice": 2100,
+      "unit": "tratamiento completo"
+    },
+    {
+      "id": "carillas_esteticas",
+      "name": "Carillas Estéticas de Porcelana",
+      "basePrice": 290,
+      "marketPrice": 550,
+      "unit": "diente"
+    },
+    {
+      "id": "endodoncia_micro",
+      "name": "Endodoncia con Microscopio",
+      "basePrice": 140,
+      "marketPrice": 280,
+      "unit": "conducto/pieza"
+    }
+  ],
+  "financingOptions": [
+    { "months": 12, "interestRate": 0 },
+    { "months": 24, "interestRate": 0 },
+    { "months": 36, "interestRate": 0.03 }
+  ]
 }

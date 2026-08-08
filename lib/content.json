@@ -1,730 +1,530 @@
 {
-  "defaultLocale": "uk",
+  "defaultLocale": "es",
   "locales": {
-    "uk": {
+    "es": {
       "meta": {
-        "title": "Clínica Dental Universitaria — Університетська Стоматологія у Мадриді",
-        "description": "Комплексна дентальна імплантація за 790€, Invisalign та ортодонтія під академічним наглядом викладачів Universidad de La Salle у Мадриді.",
-        "lang": "uk"
+        "title": "Clínica Dental Universitaria | Madrid Moncloa-Aravaca",
+        "description": "Clínica odontológica universitaria en Madrid. Implante + Corona por 790€. Ortodoncia e Invisalign con supervisión directa de profesores universitarios.",
+        "lang": "es"
       },
       "nav": {
-        "services": "Послуги та ціни",
-        "academic": "Університетська модель",
-        "calculator": "Калькулятор",
-        "team": "Лікарі",
-        "reviews": "Відгуки",
-        "faq": "Часті питання",
-        "contact": "Контакти",
-        "bookCta": "Записатись на прийом",
+        "academicModel": "Modelo Académico",
+        "services": "Tratamientos",
+        "calculator": "Calculadora",
+        "cases": "Casos Reales",
+        "faculty": "Cuadro Médico",
+        "reviews": "Opiniones",
+        "faq": "Preguntas Frecuentes",
+        "contact": "Ubicación",
+        "bookCta": "Pedir Cita Online",
         "phone": "+34 919 898 700"
       },
       "hero": {
-        "kicker": "Est. 2018 — Мадрид, Moncloa-Aravaca · Ліцензія CS14209",
-        "title": "Академічна стоматологія з цінами до 50% нижче ринкових",
-        "subtitle": "Комплексне лікування під наглядом професорів та викладачів Universidad de La Salle та EDE. Повна прозорість: імплант разом із цирконієвою короною — всього 790€.",
-        "ctaPrimary": "Записатись на 3D-діагностику",
-        "ctaSecondary": "Розрахувати вартість",
-        "badgePackage": "Пакет Імплант + Корона: 790€",
-        "badgeTrust": "4.5 / 5.0 на Google Maps (159 відгуків)",
-        "badgeSupervision": "Повний академічний контроль La Salle"
+        "kicker": "Madrid · Moncloa-Aravaca · Est. 2018",
+        "h1First": "Odontología de Máximo Rigor",
+        "h1Italic": "a Precio Universitario",
+        "subtitle": "Supervisión directa por profesores y catedráticos de la Universidad de La Salle y EDE Posgrados. Calidad certificada europea hasta un 50% por debajo de la media en Madrid.",
+        "ctaPrimary": "Reservar Valoración Gratuita",
+        "ctaSecondary": "Ver Tratamientos y Precios",
+        "badgeTitle": "Implante + Corona Completa",
+        "badgePrice": "790€",
+        "badgeSubtitle": "Sin costes ocultos · Diagnóstico 3D incluido",
+        "guaranteeText": "100% Garantía Académica y Materiales de Alta Gama UE"
       },
-      "ticker": [
-        "ІМПЛАНТ + КОРОНА 790€",
-        "КОНТРОЛЬ УНІВЕРСИТЕТУ LA SALLE",
-        "БЕЗ ПРИХОВАНИХ КОМІСІЙ",
-        "3D-ТОМОГРАФІЯ ТА СКАНУВАННЯ",
-        "INVISALIGN FULL 2850€",
-        "МАДРИД · MONCLOA - ARAVACA",
-        "4.5 / 5.0 GOOGLE MAPS"
-      ],
-      "trustBanner": {
-        "kicker": "УНІВЕРСИТЕТСЬКА МОДЕЛЬ",
-        "title": "Соціальна медицина без комерційних націнок",
-        "description": "Ми працюємо як клінічна база післядипломної освіти. Наша мета — доступне лікування високого рівня. Ви отримуєте сертифіковані європейські матеріали та лікування під наглядом провідних хірургів Мадрида за собівартістю матеріалів.",
-        "items": [
-          {
-            "num": "50%",
-            "title": "Економія до 50%",
-            "desc": "Відсутність комерційних націнок мережевих клінік дозволяє утримувати зафіксований пакет імплантації за 790€."
-          },
-          {
-            "num": "100%",
-            "title": "Контроль професорів",
-            "desc": "Кожен клінічний випадок затверджується та супроводжується викладачами та директорами магістерських програм."
-          },
-          {
-            "num": "3D",
-            "title": "Комп'ютерна діагностика",
-            "desc": "Використовуємо інтраоральне 3D-сканування та комп'ютерну томографію (КТ) для розрахунку результату."
-          },
-          {
-            "num": "0€",
-            "title": "Жодних прихованих рахунків",
-            "desc": "Анестезія, первинні знімки та контрольні огляди включені в названу ціну від самого початку."
-          }
-        ]
+      "trustTicker": {
+        "item1": "Universidad de La Salle · Respaldo Docente",
+        "item2": "4.5 / 5★ en Google (159+ Reseñas Verificadas)",
+        "item3": "Implante + Corona Completa a 790€",
+        "item4": "Invisalign® Provider Autorizado",
+        "item5": "Financiación 0% Intereses Acreditada"
+      },
+      "academicModel": {
+        "kicker": "RESPALDO CIENTÍFICO Y SOCIAL",
+        "title": "¿Por qué ofrecemos tarifas hasta un 50% inferiores?",
+        "lead": "No somos una franquicia comercial orientada al margen financiero. Somos una clínica universitaria vinculada a los posgrados de odontología de la Universidad de La Salle.",
+        "p1": "Nuestra misión principal combina la asistencia bucodental de excelencia accesible con la formación clínica avanzada de odontólogos titulados en programas de máster.",
+        "p2": "Cada diagnóstico, planificación digital y cirugía es supervisado minuciosamente paso a paso por catedráticos y especialistas de primer nivel nacional.",
+        "stat1Value": "50%",
+        "stat1Label": "Ahorro real frente a franquicias en Madrid",
+        "stat2Value": "100%",
+        "stat2Label": "Supervisión por Profesores Catedráticos",
+        "stat3Value": "159+",
+        "stat3Label": "Pacientes satisfechos en Google Maps (4.5★)"
       },
       "services": {
-        "kicker": "ФІКСОВАНІ ТАРИФИ 2026",
-        "title": "Прозорі напрямки лікування та зафіксовані пакети",
-        "subtitle": "Усі ціни зафіксовані в офіційному договорі та включають повний медичний супровід.",
-        "categories": ["Всі послуги", "Імплантація", "Ортодонтія", "Естетика", "Загальна"],
+        "kicker": "DISCIPLINAS Y TRATAMIENTOS",
+        "title": "Catálogo de Odontología Especializada",
+        "subtitle": "Tratamientos avanzados con la tecnología digital más precisa y materiales de grado médico europeo.",
         "items": [
           {
-            "id": "implante-corona",
-            "category": "Імплантація",
-            "title": "Комплекс Імплант + Корона",
+            "id": "implantes",
+            "title": "Implante + Corona Cerámica",
             "price": "790€",
-            "oldPrice": "1400€",
-            "desc": "Повний комплект: дентальний імплант сертифікованого бренду, абутмент, анестезія та міцна цирконієва корона.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/10/Implante-790-768x453.jpg",
-            "tag": "Хіт вибору"
+            "oldPrice": "1.200€",
+            "badge": "Más Demandado",
+            "description": "Reposición integral de la pieza con implante de titanio de primera marca europea y corona estética de alta resistencia. Incluye estudio implantológico 3D.",
+            "features": ["Estudio Quirúrgico 3D Incluido", "Titanio Bio-compatible Certificado", "Supervisado por Catedrático"]
           },
           {
-            "id": "invisalign-full",
-            "category": "Ортодонтія",
-            "title": "Елайнери Invisalign Full",
-            "price": "2850€",
-            "oldPrice": "4200€",
-            "desc": "Повний курс виправлення прикусу за допомогою прозорих кап Invisalign з 3D-моделюванням усмішки.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/INVISALIGN-FULL-768x454.jpg",
-            "tag": "Цифрова модель"
+            "id": "invisalign",
+            "title": "Ortodoncia Invisalign® Full",
+            "price": "2.850€",
+            "oldPrice": "4.200€",
+            "badge": "Alineadores Invisibles",
+            "description": "Corrección de la mordida y alineación con férulas transparentes removibles. Planificación digital Itero 3D en la clínica.",
+            "features": ["Escáner Óptico 3D sin moldes", "Revisiones incluidas durante el tratamiento", "Férulas de retención incluidas"]
           },
           {
-            "id": "ortodoncia-metal",
-            "category": "Ортодонтія",
-            "title": "Ортодонтія металевими брекетами",
-            "price": "1290€",
-            "oldPrice": "2200€",
-            "desc": "Надійне та класичне виправлення прикусу будь-якої складності під контролем досвідчених ортодонтів.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/ortodoncia-promo-768x454.jpg",
-            "tag": "Доступно"
+            "id": "ortodoncia",
+            "title": "Ortodoncia Convencional",
+            "price": "1.290€",
+            "oldPrice": "2.100€",
+            "badge": "Alta Eficacia",
+            "description": "Sistemas de brackets de baja fricción metálicos o estéticos cerámicos para corregir maloclusiones complejas en niños y adultos.",
+            "features": ["Estudio cefalométrico completo", "Ajustes mensuales personalizados", "Opción cerámica estética"]
           },
           {
-            "id": "protesis-allon4",
-            "category": "Імплантація",
-            "title": "Протезування All-on-4 / All-on-6",
-            "price": "від 3400€",
-            "oldPrice": "6000€",
-            "desc": "Відновлення зубного ряду за 1–2 дні на 4 або 6 імплантах. Повернення жувальної функції та естетики.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/protesis-dentales-768x454.jpg",
-            "tag": "Повний комплекс"
+            "id": "protesis",
+            "title": "Rehabilitación All-on-4 / All-on-6",
+            "price": "Consultar",
+            "badge": "Arcada Completa",
+            "description": "Recuperación de la dentadura completa fija en un solo día con prótesis sobre 4 o 6 implantes de titanio.",
+            "features": ["Carga inmediata en 24h", "Cirugía guiada por ordenador", "Máximo confort masticatorio"]
           },
           {
-            "id": "carillas-esteticas",
-            "category": "Естетика",
-            "title": "Керамічні вініри E-Max",
-            "price": "390€ / зуб",
-            "oldPrice": "650€",
-            "desc": "Ультратонкі керамічні накладки для створення точної формації та кольору зубного ряду.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/Carillas-esteticas-1-768x454.jpg",
-            "tag": "Анатомічна форма"
+            "id": "estetica",
+            "title": "Carillas y Estética Dental",
+            "price": "Desde 290€",
+            "badge": "Diseño de Sonrisa",
+            "description": "Láminas cerámicas de microcarillas para corregir forma, tono y simetría dental con preservación del esmalte natural.",
+            "features": ["Mock-up digital previo", "Cerámica feldespática / Disilicato", "Blanqueamiento combinado opcional"]
           },
           {
-            "id": "odontologia-general",
-            "category": "Загальна",
-            "title": "Консультація та 3D-діагностика",
-            "price": "0€",
-            "oldPrice": "80€",
-            "desc": "Первинний прийом, огляд професором, інтраоральне 3D-сканування та складання прозорого кошторису.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/07/odontologia-general-en-madrid-768x454.jpg",
-            "tag": "Безкоштовно"
-          },
-          {
-            "id": "vial-acido",
-            "category": "Естетика",
-            "title": "Орофаціальна гармонізація",
-            "price": "220€",
-            "oldPrice": "380€",
-            "desc": "Естетична корекція контуру губ та носогубних складок гіалуроновою кислотою для завершення усмішки.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/vial-acido-hialuronico-768x454.jpg",
-            "tag": "Естетика обличчя"
-          },
-          {
-            "id": "implantes-corona-madrid",
-            "category": "Імплантація",
-            "title": "Цирконієва корона на імпланті",
-            "price": "450€",
-            "oldPrice": "750€",
-            "desc": "Виготовлення анатомічної цирконієвої корони з підвищеною міцністю та гіпоалергенністю.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/07/implantes-y-corona-clinica-dental-madrid.jpg",
-            "tag": "Висока точність"
+            "id": "endodoncia",
+            "title": "Endodoncia bajo Microcopio",
+            "price": "Desde 140€",
+            "badge": "Conservadora",
+            "description": "Tratamiento de conductos radiculares con magnificación óptica de alta resolución para salvar piezas comprometidas sin dolor.",
+            "features": ["Microscopio óptico quirúrgico", "Obturación termoplástica", "Sellado canalicular estanco"]
           }
         ]
       },
       "calculator": {
-        "kicker": "ОНЛАЙН-РОЗРАХУНОК",
-        "title": "Калькулятор вартості лікування",
-        "subtitle": "Розрахуйте вартість відновлення усмішки з прозорою фіксацією в договорі.",
-        "teethLabel": "Кількість зубів для відновлення / імплантації:",
-        "serviceTypeLabel": "Оберіть необхідний тип процедури:",
-        "options": [
-          { "id": "implant", "name": "Імплантація (Імплант + Корона)", "price": 790, "market": 1400 },
-          { "id": "brackets", "name": "Ортодонтія (Брекети)", "price": 1290, "market": 2200 },
-          { "id": "invisalign", "name": "Елайнери Invisalign", "price": 2850, "market": 4200 },
-          { "id": "veneers", "name": "Керамічні вініри", "price": 390, "market": 650 }
-        ],
-        "ourPriceLabel": "Наша зафіксована ціна:",
-        "marketPriceLabel": "Середня ціна по Мадриду (Sanitas та приватні):",
-        "savingsLabel": "Ваша чиста економія:",
-        "guaranteeNote": "Ціна зафіксована в договорі. Включає анестезію, 3D-знімки та всі супутні матеріали."
+        "kicker": "CALCULADORA DE PRESUPUESTO",
+        "title": "Calcula tu Tratamiento sin Sorpresas",
+        "subtitle": "Transparencia absoluta desde la primera cita. Selecciona las piezas o el tipo de tratamiento y obtén un estimado con desglose claro.",
+        "serviceLabel": "Selecciona el Tratamiento Principal:",
+        "quantityLabel": "Número de piezas / arcadas:",
+        "financingLabel": "Plazo de financiación deseado:",
+        "estimatedTitle": "Presupuesto Estimado Universitario",
+        "marketComparisonTitle": "En Franquicias Tradicionales",
+        "includesText": "Incluye: Diagnóstico 3D, TAC digital, primera revisión post-tratamiento y garantía universitaria por escrito.",
+        "bookCalcCta": "Reservar este presupuesto fijado"
       },
-      "comparison": {
-        "kicker": "ПОРІВНЯЛЬНИЙ АНАЛІЗ",
-        "title": "Чому пацієнти обирають Clínica Dental Universitaria",
-        "subtitle": "Порівняння умов з іншими медичними закладами Мадрида",
-        "features": [
+      "beforeAfter": {
+        "kicker": "EVIDENCIA CLÍNICA REAL",
+        "title": "Resultados Transformadores",
+        "subtitle": "Casos complejos de implantología y ortodoncia planificados y ejecutados bajo supervisión catedrática en Moncloa-Aravaca.",
+        "case1Title": "Rehabilitación Implantológica Completa con Corona Zirconio",
+        "case1Desc": "Paciente de 54 años con pérdida severa de piezas posteriores. Recuperación de la función masticatoria y estética en 12 semanas.",
+        "case2Title": "Ortodoncia Invisalign® Full — Corrección de Apiñamiento Severo",
+        "case2Desc": "Paciente de 31 años tratada durante 14 meses. Alineación armónica sin extracciones gracias al diseño digital."
+      },
+      "advantages": {
+        "kicker": "POR QUÉ ELEGIRNOS",
+        "title": "Las 4 Columnas de Nuestra Clínica",
+        "items": [
           {
-            "name": "Вартість комплексу Імплант + Корона",
-            "us": "790€ (Фіксовано)",
-            "competitors": "Від 1200€ до 1600€",
-            "advantage": true
+            "num": "01",
+            "title": "Supervisión Catedrática Constante",
+            "desc": "Nunca estarás solo en manos de un graduado novato. Cada decisión clínica pasa por la validación activa de profesores de posgrado."
           },
           {
-            "name": "Клінічний нагляд викладачів",
-            "us": "Професори La Salle & EDE",
-            "competitors": "Відсутній або за доплату",
-            "advantage": true
+            "num": "02",
+            "title": "Tecnología Digital 3D en Moncloa",
+            "desc": "Contamos con TAC de haz cónico, escáner intraoral óptico e impresoras 3D en la propia instalación para mayor rapidez."
           },
           {
-            "name": "Первинне 3D-сканування та діагностика",
-            "us": "Включено в комплект",
-            "competitors": "80€ – 150€ окремим чеком",
-            "advantage": true
+            "num": "03",
+            "title": "Materiales de Gama Máxima UE",
+            "desc": "No recortamos en calidad. Usamos implantes con marcado CE, titanio biocompatible y cerámica de alta traslucidez."
           },
           {
-            "name": "Приховані платежі за анестезію/знімки",
-            "us": "0€ (Повна прозорість)",
-            "competitors": "Часті додаткові рахунки",
-            "advantage": true
-          },
-          {
-            "name": "Можливість безвідсоткового розстрочення",
-            "us": "Так (Соціальні програми)",
-            "competitors": "Обмежено або з відсотками",
-            "advantage": true
+            "num": "04",
+            "title": "Financiación Adaptada a Medida",
+            "desc": "Facilidades de pago hasta en 36 meses con opciones sin intereses para garantizar que el factor económico no frene tu salud."
           }
         ]
       },
       "videoShowcase": {
-        "kicker": "АКАДЕМІЧНИЙ СТАНДАРТ",
-        "title": "Як проходить прийом в університетській клініці",
-        "subtitle": "Подивіться, як наші фахівці поєднують турботу про пацієнта із передовими технологіями 3D-діагностики.",
-        "videoUrl": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/07/banner-clinica-dental-u-video.mp4",
-        "posterUrl": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/08/video-thumb-por-que.jpg"
+        "kicker": "INSTALACIONES Y TECNOLOGÍA",
+        "title": "Rigurosidad en Cada Detalle Quirúrgico",
+        "subtitle": "Conoce los gabinetes equipados con microscopio óptico y tomografía digital en Calle de Alberto Aguilera.",
+        "playText": "Reproducir Tour de Instalaciones"
       },
-      "testimonials": {
-        "kicker": "СЛОВО ПАЦІЄНТІВ",
-        "title": "Реальні історії та відгуки",
-        "subtitle": "Більше 159 відгуків та середня оцінка 4.5/5 на Google Maps",
-        "googleRating": "4.5 / 5.0",
-        "googleReviewsCount": "159 підтверджених відгуків",
-        "list": [
-          {
-            "name": "Ana Carreras",
-            "procedure": "Комплексна імплантація та естетика · пацієнтка з 2024 року",
-            "text": "Прийшла із сумнівами, але з першої ж консультації відчула, що знаходжуся в надійному місці. Мені все пояснили чітко, без тиску та прихованих платежів. Сьогодні маю нову усмішку та впевненість.",
-            "rating": 5
-          },
-          {
-            "name": "Carlos Mendoza",
-            "procedure": "Елайнери Invisalign Full · пацієнт з 2024 року",
-            "text": "В інших клініках Мадрида за Invisalign мені нарахували понад 4000€. В університетській клініці зробили 3D-сканування та чітко зафіксували 2850€ за весь курс. Результат отримав за 14 місяців.",
-            "rating": 5
-          },
-          {
-            "name": "Elena Prieto",
-            "procedure": "Імплантація + Цирконієва корона · пацієнтка з 2023 року",
-            "text": "Переймалася, що за ціною 790€ працюють недосвідчені люди. Насправді кожну маніпуляцію проводить лікар та особисто перевіряє професор. Чудове ставлення та відсутність болю.",
-            "rating": 5
-          }
-        ]
-      },
-      "team": {
-        "kicker": "АКАДЕМІЧНИЙ СКЛАД",
-        "title": "Керівники програм та професори-наставники",
-        "subtitle": "Ваше лікування контролюють акредитовані експерти з хірургії, імплантології та ортодонтії.",
+      "faculty": {
+        "kicker": "CUADRO MÉDICO Y DOCENTE",
+        "title": "Directores de Posgrado y Catedráticos",
+        "subtitle": "Especialistas de renombre nacional que dirigen las áreas clínicas y supervisan los tratamientos de la clínica.",
         "members": [
           {
             "name": "Dr. Juan Carlos Vara",
-            "role": "Засновник EDE Posgrados Odontológicos",
-            "spec": "Спеціаліст з імплантології та оральної реабілітації. Директор магістратури з оральної хірургії."
+            "role": "Fundador de EDE Posgrados & Director de Máster",
+            "spec": "Especialista en Implantología y Rehabilitación Oral. Director del Máster en Cirugía Bucal e Implantología."
           },
           {
             "name": "Dr. Juan Delgado",
-            "role": "Засновник EDE Posgrados Odontológicos",
-            "spec": "Директор післядипломного курсу з цифрової стоматології та навігаційної хірургії."
+            "role": "Fundador EDE & Director de Odontología Digital",
+            "spec": "Especialista en Odontología Digital y Cirugía Guiada por Ordenador."
           },
           {
             "name": "Dr. Miguel Ortega",
-            "role": "Клінічний директор",
-            "spec": "Магістр з оральної хірургії та імплантології. Професор магістерської програми."
+            "role": "Director Odontológico de la Clínica",
+            "spec": "Máster en Cirugía Bucal e Implantología. Profesor titular de prácticas quirúrgicas."
           },
           {
             "name": "Dra. Sara Vallinas",
-            "role": "Професор з протезування",
-            "spec": "Експерт з протезування на імплантах та оклюзії. Викладач Universidad de La Salle."
+            "role": "Profesora de Prótesis sobre Implantes",
+            "spec": "Experta en Prótesis, Oclusión y Estética Dental Avanzada."
           },
           {
             "name": "Dr. Pedro Lázaro",
-            "role": "Спеціаліст з пародонтології",
-            "spec": "Експерт з реконструктивної оральної хірургії та пародонтальної пластики."
+            "role": "Periodoncia y Regeneración Ósea",
+            "spec": "Cirugía Avanzada, Sinus Lift y Regeneración Tejidos Periimplantarios."
           },
           {
-            "name": "Dr. Jose María Aranguren",
-            "role": "Спеціаліст з ендодонтії",
-            "spec": "Мікроскопічна ендодонтія та апікальна хірургія складної категорії."
+            "name": "Dr. Juan Carlos Rivero",
+            "role": "Ortodoncia y Ortopedia Dentofacial",
+            "spec": "Especialista acreditado Invisalign® Diamond Provider."
           }
         ]
       },
-      "process": {
-        "kicker": "КЛІНІЧНИЙ МАРШРУТ",
-        "title": "4 кроки до відновлення усмішки",
-        "subtitle": "Зрозумілий та комфортний процес від першого звернення до фінального результату",
-        "steps": [
+      "reviews": {
+        "kicker": "TESTIMONIOS VERIFICADOS",
+        "title": "Historias Reales de Pacientes",
+        "subtitle": "Opiniones extraídas directamente de Google Maps (4.5 de 5 estrellas basadas en 159+ valoraciones).",
+        "quotes": [
           {
-            "num": "1",
-            "title": "Безкоштовна 3D-діагностика",
-            "desc": "Первинний огляд, комп'ютерна томографія та інтраоральне 3D-сканування без додаткових витрат."
+            "author": "Ana Carreras",
+            "text": "Llegué con miedo y muchísimas dudas, pero desde la primera cita sentí que estaba en el lugar correcto. Me explicaron todo con claridad, sin presiones, y el trato fue increíble. Hoy no solo tengo una sonrisa nueva, tengo más seguridad en mí misma.",
+            "rating": 5,
+            "treatment": "Implante + Corona Cerámica"
           },
           {
-            "num": "2",
-            "title": "Затвердження кошторису",
-            "desc": "Консиліум професорів розробляє план лікування із фіксацією остаточної ціни в договорі."
+            "author": "Carlos M. Argüelles",
+            "text": "Increíble la atención de los profesores y los residentes. Me ahorré más de 1.000€ en mi tratamiento completo de ortodoncia respecto al presupuesto que me dieron en otra clínica de Moncloa.",
+            "rating": 5,
+            "treatment": "Ortodoncia Invisalign"
           },
           {
-            "num": "3",
-            "title": "Лікування за протоколом",
-            "desc": "Проведення маніпуляцій із застосуванням сучасних анестетиків та наукового контролю."
-          },
-          {
-            "num": "4",
-            "title": "Гарантія та підтримка",
-            "desc": "Фінальна фіксація конструкцій, регулярні безкоштовні контрольні огляди та гарантійний сертифікат."
+            "author": "Elena G. Chamberí",
+            "text": "El trato es infinitamente más humano que en las grandes franquicias. Te atienden sin prisas, revisan cada paso con el catedrático y la precisión del TAC 3D transmite muchísima tranquilidad.",
+            "rating": 5,
+            "treatment": "Rehabilitación de Prótesis"
           }
         ]
-      },
-      "coverage": {
-        "kicker": "РОЗТАШУВАННЯ",
-        "title": "Зручний доступ у центрі Мадрида",
-        "subtitle": "Клініка розташована в районі Moncloa-Aravaca поруч із станціями метро Argüelles та San Bernardo.",
-        "address": "Calle de Alberto Aguilera, Madrid, España",
-        "phone": "+34 919 898 700",
-        "metro": "Метро: Argüelles (L1, L3, L6) / San Bernardo (L2, L4)",
-        "hours": "Пн – Пт: 09:00 – 20:00 · Сб: за попереднім записом",
-        "districts": ["Moncloa", "Aravaca", "Chamberí", "Центр Мадрида"]
       },
       "faq": {
-        "kicker": "ПИТАННЯ ТА ВІДПОВІДІ",
-        "title": "Часті питання пацієнтів",
-        "subtitle": "Все, що потрібно знати про університетську модель лікування",
-        "items": [
-          {
-            "q": "Чому ваші ціни значно нижчі, ніж в інших клініках Мадрида?",
-            "a": "Наші ціни до 50% нижчі за середні по ринку, оскільки ми є університетською клінічною базою. Головна мета — соціальна доступність медицини та практика для резидентів післядипломної освіти."
-          },
-          {
-            "q": "Хто безпосередньо проводить лікування: студенти чи дипломовані лікарі?",
-            "a": "Вас обслуговують дипломовані стоматологи — лікарі-резиденти магістерських програм під безпосереднім особистим наглядом та контролем професорів Universidad de La Salle."
-          },
-          {
-            "q": "Чи є якісними матеріали при такій ціні?",
-            "a": "Так, ми працюємо виключно із сертифікованими європейськими імплантами та високоміцним цирконієм. Ціна досягається відсутністю комерційної націнки."
-          },
-          {
-            "q": "Чи входить корона та анестезія у вартість імплантації 790€?",
-            "a": "Так! Ціна 790€ є комплексною: вона включає сам імплант, абутмент, цирконієву корону, анестезію та контрольні знімки. Жодних прихованих доплат."
-          },
-          {
-            "q": "Скільки часу триває курс ортодонтії або елайнерів Invisalign?",
-            "a": "У середньому від 12 до 24 місяців залежно від складності. На первинному 3D-скануванні ви побачите точну комп'ютерну модель."
-          },
-          {
-            "q": "Чи можна оформити розстрочку на лікування?",
-            "a": "Так, ми надаємо можливість оплати частинами без переплат та комісій, щоб зробити лікування ще доступнішим."
-          }
-        ]
+        "kicker": "RESOLVEMOS TUS DUDAS",
+        "title": "Preguntas Frecuentes de Nuestros Pacientes",
+        "subtitle": "Transparencia absoluta sobre la atención, los plazos y la metodología universitaria."
+      },
+      "location": {
+        "kicker": "DÓNDE ENCONTRARNOS",
+        "title": "En el Corazón de Moncloa-Aravaca",
+        "address": "Calle de Alberto Aguilera, Madrid",
+        "metro": "Metro: Argüelles / Moncloa / San Bernardo",
+        "hours": "Lunes a Viernes: 09:00 - 20:00h | Sábados: Cita Previa",
+        "phone": "+34 919 898 700",
+        "email": "info@clinicadentaluniversitaria.com",
+        "coverage": "Damos servicio prioritario a residentes de Moncloa, Aravaca, Argüelles y Chamberí."
       },
       "bookingForm": {
-        "kicker": "ПЕРВИННИЙ ПРИЙОМ",
-        "title": "Забронюйте час 3D-діагностики та консультації професора",
-        "subtitle": "Залиште заявку для фіксації спеціальної ціни 790€ на імплантацію.",
-        "namePlaceholder": "Ваше ім'я та прізвище",
-        "phonePlaceholder": "+34 600 000 000 або номер телефону",
-        "serviceSelect": "Оберіть послугу, яка вас цікавить",
-        "dateLabel": "Бажана дата прийому",
-        "submitBtn": "Підтвердити запис на діагностику",
-        "successMsg": "Заявку прийнято. Клінічний адміністратор зателефонує вам найближчим часом.",
-        "guaranteeText": "Ваші дані захищені. Фіксована ціна 790€ бронується за вами без передплат."
+        "kicker": "CITA PREVIA ONLINE",
+        "title": "Solicita tu Cita de Valoración Gratuita",
+        "subtitle": "Incluye revisión inicial, radiografía diagnóstica 3D y presupuesto cerrado sin compromiso.",
+        "fieldName": "Nombre y Apellidos *",
+        "fieldPhone": "Teléfono de Contacto *",
+        "fieldEmail": "Correo Electrónico",
+        "fieldService": "Tratamiento de Interés *",
+        "fieldDate": "Fecha Preferida de Visita",
+        "fieldComments": "Comentarios o dudas particulares",
+        "submitBtn": "Confirmar Solicitud de Cita",
+        "submitting": "Procesando Reserva...",
+        "successTitle": "¡Solicitud Recibida con Éxito!",
+        "successDesc": "Nuestro equipo de coordinación médica te llamará en breve desde el +34 919 898 700 para confirmar la hora exacta de tu cita.",
+        "note": "Tus datos son tratados con estricta confidencialidad médica conforme al RGPD."
       },
       "footer": {
-        "tagline": "Академічна стоматологія Мадрида · Прозорість, точність та турбота",
-        "rights": "© 2026 Clínica Dental Universitaria. Всі права захищено.",
-        "academicNote": "Університетська партнерська база Universidad de La Salle та EDE Posgrados Odontológicos.",
-        "developer": "Студія Тест"
+        "brandDesc": "Clínica Odontológica Universitaria vinculada a EDE Posgrados y Universidad de La Salle. Odontología social, ética y de la máxima precisión científica en Madrid.",
+        "col1Title": "Tratamientos",
+        "col2Title": "Garantía Académica",
+        "col3Title": "Atención al Paciente",
+        "rights": "© 2026 Clínica Dental Universitaria. Todos los derechos reservados.",
+        "developerCredit": "Desarrollado por Студія Тест"
       }
     },
     "en": {
       "meta": {
-        "title": "Clínica Dental Universitaria — Academic Dental Clinic in Madrid",
-        "description": "Comprehensive dental implant package for 790€, Invisalign and orthodontics under supervision of Universidad de La Salle professors in Madrid.",
+        "title": "University Dental Clinic | Madrid Moncloa-Aravaca",
+        "description": "University dental clinic in Madrid. Complete Implant + Crown from €790. Invisalign & Orthodontics supervised by university professors.",
         "lang": "en"
       },
       "nav": {
-        "services": "Services & Prices",
-        "academic": "University Model",
+        "academicModel": "Academic Model",
+        "services": "Treatments",
         "calculator": "Calculator",
-        "team": "Medical Staff",
+        "cases": "Clinical Cases",
+        "faculty": "Medical Faculty",
         "reviews": "Reviews",
         "faq": "FAQ",
-        "contact": "Contacts",
+        "contact": "Location",
         "bookCta": "Book Appointment",
         "phone": "+34 919 898 700"
       },
       "hero": {
-        "kicker": "Est. 2018 — Madrid, Moncloa-Aravaca · License CS14209",
-        "title": "Academic Dentistry with Fixed Prices up to 50% Lower",
-        "subtitle": "Comprehensive treatment supervised by professors of Universidad de La Salle & EDE. Complete transparency: Implant + Zirconia Crown for just 790€.",
-        "ctaPrimary": "Book 3D Diagnostics",
-        "ctaSecondary": "Calculate Cost",
-        "badgePackage": "Implant + Crown Package: 790€",
-        "badgeTrust": "4.5 / 5.0 on Google Maps (159 reviews)",
-        "badgeSupervision": "Full Academic Supervision La Salle"
+        "kicker": "Madrid · Moncloa-Aravaca · Est. 2018",
+        "h1First": "Maximum Rigor Dentistry",
+        "h1Italic": "at University Prices",
+        "subtitle": "Direct supervision by professors and senior specialists from Universidad de La Salle and EDE Posgrados. Certified EU quality up to 50% below Madrid average market rates.",
+        "ctaPrimary": "Book Free Consultation",
+        "ctaSecondary": "View Treatments & Prices",
+        "badgeTitle": "Implant + Full Ceramic Crown",
+        "badgePrice": "790€",
+        "badgeSubtitle": "No hidden costs · 3D Scan Included",
+        "guaranteeText": "100% Academic Guarantee & Premium EU Materials"
       },
-      "ticker": [
-        "IMPLANT + CROWN 790€",
-        "LA SALLE UNIVERSITY SUPERVISION",
-        "NO HIDDEN FEES",
-        "3D CT SCAN & SCANNING",
-        "INVISALIGN FULL 2850€",
-        "MADRID · MONCLOA - ARAVACA",
-        "4.5 / 5.0 GOOGLE MAPS"
-      ],
-      "trustBanner": {
-        "kicker": "UNIVERSITY MODEL",
-        "title": "Social Dentistry Without Commercial Markups",
-        "description": "We operate as a clinical postgraduate base. Our goal is accessible high-end dentistry. You get certified European materials supervised by chief surgeons at cost value.",
-        "items": [
-          {
-            "num": "50%",
-            "title": "Up to 50% Savings",
-            "desc": "No commercial markups of private chains allows fixed 790€ implant package."
-          },
-          {
-            "num": "100%",
-            "title": "Professor Supervision",
-            "desc": "Every clinical case is verified by master degree directors."
-          },
-          {
-            "num": "3D",
-            "title": "Accurate 3D Diagnostics",
-            "desc": "Intraoral 3D scanning and CT scans for precise planning."
-          },
-          {
-            "num": "0€",
-            "title": "Zero Hidden Fees",
-            "desc": "Anesthesia, initial X-rays and controls are included upfront."
-          }
-        ]
+      "trustTicker": {
+        "item1": "Universidad de La Salle Academic Backing",
+        "item2": "4.5 / 5★ on Google (159+ Verified Reviews)",
+        "item3": "Implant + Full Crown for 790€",
+        "item4": "Authorized Invisalign® Provider",
+        "item5": "0% Interest Financing Options"
+      },
+      "academicModel": {
+        "kicker": "ACADEMIC & SOCIAL COMMITMENT",
+        "title": "Why are our prices up to 50% lower?",
+        "lead": "We are not a commercial franchise driven by financial profit. We are a university clinic affiliated with postgraduate dental master programs.",
+        "p1": "Our main mission combines accessible high-standard healthcare with clinical advanced training for licensed postgraduate dentists.",
+        "p2": "Every diagnosis, digital plan, and surgery is closely supervised step-by-step by top university professors and department directors.",
+        "stat1Value": "50%",
+        "stat1Label": "Real savings compared to commercial franchises",
+        "stat2Value": "100%",
+        "stat2Label": "Supervision by University Professors",
+        "stat3Value": "159+",
+        "stat3Label": "Satisfied patient reviews on Google (4.5★)"
       },
       "services": {
-        "kicker": "FIXED RATES 2026",
-        "title": "Transparent Treatment Plans & Fixed Packages",
-        "subtitle": "All prices locked in official contract with full medical support.",
-        "categories": ["All Services", "Implants", "Orthodontics", "Esthetics", "General"],
+        "kicker": "DISCIPLINES & TREATMENTS",
+        "title": "Specialized Dental Services",
+        "subtitle": "Advanced dental treatments using precision 3D technology and European medical grade materials.",
         "items": [
           {
-            "id": "implante-corona",
-            "category": "Implants",
-            "title": "Implant + Crown Package",
+            "id": "implantes",
+            "title": "Dental Implant + Crown",
             "price": "790€",
-            "oldPrice": "1400€",
-            "desc": "Complete kit: certified dental implant, abutment, anesthesia and durable zirconia crown.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/10/Implante-790-768x453.jpg",
-            "tag": "Top Choice"
+            "oldPrice": "1.200€",
+            "badge": "Most Requested",
+            "description": "Full replacement of missing teeth with premium titanium implant and aesthetic ceramic crown. Includes 3D diagnostic scan.",
+            "features": ["Includes 3D CT Scan", "Certified Biocompatible Titanium", "Supervised by Head Professor"]
           },
           {
-            "id": "invisalign-full",
-            "category": "Orthodontics",
-            "title": "Invisalign Full Aligners",
-            "price": "2850€",
-            "oldPrice": "4200€",
-            "desc": "Full aligners treatment with 3D digital smile simulation.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/INVISALIGN-FULL-768x454.jpg",
-            "tag": "Digital Model"
+            "id": "invisalign",
+            "title": "Invisalign® Full Orthodontics",
+            "price": "2.850€",
+            "oldPrice": "4.200€",
+            "badge": "Invisible Aligners",
+            "description": "Clear removable aligners for bite correction. Complete 3D digital planning with in-clinic optical scanner.",
+            "features": ["3D Optical Scan - No Molds", "All Checkups Included", "Retainer Trays Included"]
           },
           {
-            "id": "ortodoncia-metal",
-            "category": "Orthodontics",
-            "title": "Metal Braces Orthodontics",
-            "price": "1290€",
-            "oldPrice": "2200€",
-            "desc": "Reliable alignment for any complexity supervised by experts.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/ortodoncia-promo-768x454.jpg",
-            "tag": "Affordable"
+            "id": "ortodoncia",
+            "title": "Conventional Brackets",
+            "price": "1.290€",
+            "oldPrice": "2.100€",
+            "badge": "High Efficiency",
+            "description": "Low-friction metal or ceramic aesthetic brackets to solve complex alignment issues in children and adults.",
+            "features": ["Full Cephalometric Study", "Monthly Adjustments Included", "Esthetic Ceramic Option"]
           },
           {
-            "id": "protesis-allon4",
-            "category": "Implants",
-            "title": "All-on-4 / All-on-6 Prosthetics",
-            "price": "from 3400€",
-            "oldPrice": "6000€",
-            "desc": "Full arch rehabilitation in 1-2 days on 4 or 6 implants.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/protesis-dentales-768x454.jpg",
-            "tag": "Full Arch Restoration"
+            "id": "protesis",
+            "title": "All-on-4 / All-on-6 Rehabilitation",
+            "price": "On Request",
+            "badge": "Full Arch",
+            "description": "Full fixed jaw restoration in a single day supported by 4 or 6 titanium implants.",
+            "features": ["Immediate Loading in 24h", "Computer Guided Surgery", "Maximum Chewing Comfort"]
           },
           {
-            "id": "carillas-esteticas",
-            "category": "Esthetics",
-            "title": "E-Max Ceramic Veneers",
-            "price": "390€ / tooth",
-            "oldPrice": "650€",
-            "desc": "Ultra-thin ceramic veneers for teeth shape and color.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/Carillas-esteticas-1-768x454.jpg",
-            "tag": "Anatomical Form"
+            "id": "estetica",
+            "title": "Veneers & Smile Design",
+            "price": "From 290€",
+            "badge": "Smile Design",
+            "description": "Ultra-thin ceramic veneers to adjust teeth shape, color, and symmetry while preserving natural enamel.",
+            "features": ["Digital Mock-up", "Feldespathic / Disilicate Ceramic", "Optional Teeth Whitening"]
           },
           {
-            "id": "odontologia-general",
-            "category": "General",
-            "title": "Consultation & 3D Diagnostics",
-            "price": "0€",
-            "oldPrice": "80€",
-            "desc": "Initial examination, professor review and 3D intraoral scan.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/07/odontologia-general-en-madrid-768x454.jpg",
-            "tag": "Free"
-          },
-          {
-            "id": "vial-acido",
-            "category": "Esthetics",
-            "title": "Orofacial Harmonization",
-            "price": "220€",
-            "oldPrice": "380€",
-            "desc": "Facial aesthetic contouring with hyaluronic acid.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/09/vial-acido-hialuronico-768x454.jpg",
-            "tag": "Facial Esthetics"
-          },
-          {
-            "id": "implantes-corona-madrid",
-            "category": "Implants",
-            "title": "Zirconia Crown on Implant",
-            "price": "450€",
-            "oldPrice": "750€",
-            "desc": "Anatomical zirconia crown crafted with digital precision.",
-            "image": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/07/implantes-y-corona-clinica-dental-madrid.jpg",
-            "tag": "High Precision"
+            "id": "endodoncia",
+            "title": "Microscopic Endodontics",
+            "price": "From 140€",
+            "badge": "Conservative",
+            "description": "Root canal treatments performed under high-magnification optical microscope to save damaged teeth painlessly.",
+            "features": ["Optical Surgical Microscope", "Thermoplastic Obturation", "Hermetic Canal Seal"]
           }
         ]
       },
       "calculator": {
-        "kicker": "ONLINE CALCULATOR",
-        "title": "Treatment Price Calculator",
-        "subtitle": "Calculate cost for your smile restoration locked in contract.",
-        "teethLabel": "Number of teeth to restore / implants:",
-        "serviceTypeLabel": "Select procedure type:",
-        "options": [
-          { "id": "implant", "name": "Implant + Crown Package", "price": 790, "market": 1400 },
-          { "id": "brackets", "name": "Braces Orthodontics", "price": 1290, "market": 2200 },
-          { "id": "invisalign", "name": "Invisalign Aligners", "price": 2850, "market": 4200 },
-          { "id": "veneers", "name": "Ceramic Veneers", "price": 390, "market": 650 }
-        ],
-        "ourPriceLabel": "Our Fixed Price:",
-        "marketPriceLabel": "Average Madrid Market Price:",
-        "savingsLabel": "Your Pure Savings:",
-        "guaranteeNote": "Price locked in contract. Includes anesthesia, 3D scans and controls."
+        "kicker": "BUDGET ESTIMATOR",
+        "title": "Transparent Treatment Cost Estimator",
+        "subtitle": "Complete transparency from day one. Select your treatment options and calculate an instant estimate.",
+        "serviceLabel": "Select Main Treatment:",
+        "quantityLabel": "Number of teeth / arches:",
+        "financingLabel": "Preferred Financing Term:",
+        "estimatedTitle": "University Estimated Cost",
+        "marketComparisonTitle": "In Standard Commercial Clinics",
+        "includesText": "Includes: 3D Diagnosis, Digital CT Scan, first post-treatment review, and written university warranty.",
+        "bookCalcCta": "Lock in this estimated price"
       },
-      "comparison": {
-        "kicker": "COMPARATIVE ANALYSIS",
-        "title": "Why Patients Choose Clínica Dental Universitaria",
-        "subtitle": "Comparing conditions with other clinics in Madrid",
-        "features": [
+      "beforeAfter": {
+        "kicker": "CLINICAL EVIDENCE",
+        "title": "Real Patient Results",
+        "subtitle": "Complex implantology and orthodontic cases planned and executed under professor supervision in Moncloa-Aravaca.",
+        "case1Title": "Full Implant Restoration with Zirconia Crown",
+        "case1Desc": "54-year-old patient with severe posterior tooth loss. Complete chewing function and aesthetics restored in 12 weeks.",
+        "case2Title": "Invisalign® Full — Severe Crowding Correction",
+        "case2Desc": "31-year-old patient treated over 14 months. Harmonic alignment achieved without teeth extractions."
+      },
+      "advantages": {
+        "kicker": "WHY CHOOSE US",
+        "title": "Our 4 Academic Pillars",
+        "items": [
           {
-            "name": "Implant + Crown Package Cost",
-            "us": "790€ (Fixed)",
-            "competitors": "1200€ to 1600€",
-            "advantage": true
+            "num": "01",
+            "title": "Continuous Professor Supervision",
+            "desc": "Every step is verified and validated by senior master's degree professors and clinical department heads."
           },
           {
-            "name": "Professor Clinical Supervision",
-            "us": "La Salle & EDE Professors",
-            "competitors": "Absent or extra charge",
-            "advantage": true
+            "num": "02",
+            "title": "3D Digital Tech in Moncloa",
+            "desc": "Equipped with Cone Beam 3D CT scanner, optical intraoral scanners, and in-house 3D printers."
           },
           {
-            "name": "3D Scan & Diagnostics",
-            "us": "Included in package",
-            "competitors": "80€ – 150€ extra fee",
-            "advantage": true
+            "num": "03",
+            "title": "Top European Grade Materials",
+            "desc": "No compromises on quality. We only use CE-marked European implants, biocompatible titanium, and translucent ceramic."
           },
           {
-            "name": "Hidden anesthesia/X-ray fees",
-            "us": "0€ (Full transparency)",
-            "competitors": "Frequent unexpected bills",
-            "advantage": true
-          },
-          {
-            "name": "Interest-free financing",
-            "us": "Yes (Social plans)",
-            "competitors": "Limited or interest added",
-            "advantage": true
+            "num": "04",
+            "title": "Tailored Flexible Financing",
+            "desc": "Financing plans available up to 36 months with interest-free options to ensure financial peace of mind."
           }
         ]
       },
       "videoShowcase": {
-        "kicker": "ACADEMIC STANDARD",
-        "title": "Inside Our University Dental Clinic",
-        "subtitle": "Watch how our specialists merge patient care with advanced 3D diagnostic technology.",
-        "videoUrl": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/07/banner-clinica-dental-u-video.mp4",
-        "posterUrl": "https://clinicadentaluniversitaria.com/wp-content/uploads/2025/08/video-thumb-por-que.jpg"
+        "kicker": "FACILITIES & TECH",
+        "title": "Surgical Rigor in Every Detail",
+        "subtitle": "Explore our state-of-the-art treatment rooms with surgical microscopes on Calle de Alberto Aguilera.",
+        "playText": "Play Virtual Facility Tour"
       },
-      "testimonials": {
-        "kicker": "PATIENT REVIEWS",
-        "title": "Real Stories, Real Smiles",
-        "subtitle": "Over 159 reviews with an average 4.5/5 rating on Google Maps",
-        "googleRating": "4.5 / 5.0",
-        "googleReviewsCount": "159 verified reviews",
-        "list": [
-          {
-            "name": "Ana Carreras",
-            "procedure": "Comprehensive Implants & Esthetics · patient since 2024",
-            "text": "I arrived with doubts, but from the first appointment I felt in the right place. Everything was explained clearly without pressure or hidden costs. Today I have a new smile and confidence.",
-            "rating": 5
-          },
-          {
-            "name": "Carlos Mendoza",
-            "procedure": "Invisalign Full Aligners · patient since 2024",
-            "text": "Other clinics in Madrid quoted over 4000€ for Invisalign. The university clinic scanned me in 3D and fixed 2850€ for the full course. Result achieved in 14 months.",
-            "rating": 5
-          },
-          {
-            "name": "Elena Prieto",
-            "procedure": "Implant + Zirconia Crown · patient since 2023",
-            "text": "I was worried that at 790€ only inexperienced students would work. In reality every step is performed by doctors and verified by professors. Truly human care.",
-            "rating": 5
-          }
-        ]
-      },
-      "team": {
-        "kicker": "ACADEMIC STAFF",
-        "title": "Program Directors & Supervising Professors",
-        "subtitle": "Your treatment is supervised by accredited experts in surgery and orthodontics.",
+      "faculty": {
+        "kicker": "MEDICAL & FACULTY TEAM",
+        "title": "Department Heads & Master Directors",
+        "subtitle": "Renowned dental specialists directing academic clinical practice and supervising treatments.",
         "members": [
           {
             "name": "Dr. Juan Carlos Vara",
-            "role": "Founder of EDE Posgrados",
-            "spec": "Implantology & Oral Rehabilitation Specialist. Master Director in Oral Surgery."
+            "role": "EDE Founder & Master's Director",
+            "spec": "Specialist in Implantology & Oral Rehabilitation. Director of Master's Degree in Oral Surgery."
           },
           {
             "name": "Dr. Juan Delgado",
-            "role": "Founder of EDE Posgrados",
-            "spec": "Director of Postgraduate program in Digital Dentistry and Guided Surgery."
+            "role": "EDE Founder & Digital Dentistry Director",
+            "spec": "Specialist in Digital Dentistry and Guided Computer Surgery."
           },
           {
             "name": "Dr. Miguel Ortega",
             "role": "Clinical Director",
-            "spec": "Master in Oral Surgery & Implantology. Master program Professor."
+            "spec": "Master in Oral Surgery & Implantology. Senior Surgical Practice Professor."
           },
           {
             "name": "Dra. Sara Vallinas",
-            "role": "Prosthetics Professor",
-            "spec": "Expert in Implant Prosthetics & Occlusion. Professor at Universidad de La Salle."
+            "role": "Prosthetics & Occlusion Professor",
+            "spec": "Expert in Implant Prosthetics, Occlusion, and Advanced Aesthetic Dentistry."
           },
           {
             "name": "Dr. Pedro Lázaro",
-            "role": "Periodontics Specialist",
-            "spec": "Advanced Regenerative Surgery & Mucogingival plastic surgery expert."
+            "role": "Periodontics & Bone Regeneration",
+            "spec": "Advanced Surgery, Sinus Lift, and Peri-implant Tissue Regeneration."
           },
           {
-            "name": "Dr. Jose María Aranguren",
-            "role": "Endodontics Specialist",
-            "spec": "Microscopic Endodontics and Apical Surgery specialist."
+            "name": "Dr. Juan Carlos Rivero",
+            "role": "Orthodontics & Dentofacial Orthopedics",
+            "spec": "Invisalign® Diamond Provider Specialist."
           }
         ]
       },
-      "process": {
-        "kicker": "CLINICAL PATHWAY",
-        "title": "4 Steps to Your Healthy Smile",
-        "subtitle": "Clear and comfortable process from first call to final result",
-        "steps": [
+      "reviews": {
+        "kicker": "VERIFIED REVIEWS",
+        "title": "Real Patient Testimonials",
+        "subtitle": "Unfiltered reviews directly from Google Maps (4.5/5 rating based on 159+ reviews).",
+        "quotes": [
           {
-            "num": "1",
-            "title": "Free 3D Diagnostics",
-            "desc": "Initial checkup, CT scan and 3D intraoral scanning without extra cost."
+            "author": "Ana Carreras",
+            "text": "I came with fear and many doubts, but from the first appointment I felt I was in the right place. Everything was explained clearly without pressure. Today I have a brand new smile and total confidence.",
+            "rating": 5,
+            "treatment": "Implant + Ceramic Crown"
           },
           {
-            "num": "2",
-            "title": "Budget Approval",
-            "desc": "Professor council designs treatment plan with fixed final contract price."
+            "author": "Carlos M. Argüelles",
+            "text": "Outstanding care by professors and residents. I saved over 1,000€ on my orthodontic treatment compared to commercial clinic quotes in Moncloa.",
+            "rating": 5,
+            "treatment": "Invisalign Orthodontics"
           },
           {
-            "num": "3",
-            "title": "Painless Treatment",
-            "desc": "Procedures performed with modern anesthetics and scientific supervision."
-          },
-          {
-            "num": "4",
-            "title": "Guarantee & Care",
-            "desc": "Final prosthetic fitting, regular free control checkups and warranty certificate."
+            "author": "Elena G. Chamberí",
+            "text": "Much more human and empathetic treatment than commercial franchise chains. Thorough care backed by 3D scans gives true peace of mind.",
+            "rating": 5,
+            "treatment": "Full Dental Rehabilitation"
           }
         ]
-      },
-      "coverage": {
-        "kicker": "LOCATION",
-        "title": "Convenient Access in Central Madrid",
-        "subtitle": "Located in Moncloa-Aravaca near Argüelles and San Bernardo metro stations.",
-        "address": "Calle de Alberto Aguilera, Madrid, Spain",
-        "phone": "+34 919 898 700",
-        "metro": "Metro: Argüelles (L1, L3, L6) / San Bernardo (L2, L4)",
-        "hours": "Mon – Fri: 09:00 – 20:00 · Sat: By appointment",
-        "districts": ["Moncloa", "Aravaca", "Chamberí", "Madrid City Center"]
       },
       "faq": {
-        "kicker": "QUESTIONS & ANSWERS",
+        "kicker": "YOUR QUESTIONS ANSWERED",
         "title": "Frequently Asked Questions",
-        "subtitle": "Everything you need to know about the university care model",
-        "items": [
-          {
-            "q": "Why are your prices lower than other Madrid clinics?",
-            "a": "Our prices are up to 50% below market average because we are a university clinical training site. Our primary focus is social health access and clinical education, not commercial profit."
-          },
-          {
-            "q": "Who performs the treatment: students or certified doctors?",
-            "a": "You are treated by qualified licensed dentists (postgraduate residents) under direct personal supervision and validation by Universidad de La Salle professors."
-          },
-          {
-            "q": "Are the materials high quality at these rates?",
-            "a": "Yes, we exclusively use certified European implants and high-strength zirconia. Price savings come from zero commercial markup."
-          },
-          {
-            "q": "Is crown and anesthesia included in the 790€ implant price?",
-            "a": "Yes! The 790€ package includes the implant, abutment, zirconia crown, anesthesia and control X-rays. No hidden fees."
-          },
-          {
-            "q": "How long does Invisalign or orthodontics take?",
-            "a": "Typically 12 to 24 months. At initial 3D scanning you receive a computer simulation showing exact tooth movement timelines."
-          },
-          {
-            "q": "Can I finance my treatment?",
-            "a": "Yes, we offer comfortable interest-free installment options to make care accessible."
-          }
-        ]
+        "subtitle": "Complete clarity regarding treatment process, university model, and timelines."
+      },
+      "location": {
+        "kicker": "OUR LOCATION",
+        "title": "In the Heart of Moncloa-Aravaca",
+        "address": "Calle de Alberto Aguilera, Madrid",
+        "metro": "Metro: Argüelles / Moncloa / San Bernardo",
+        "hours": "Mon to Fri: 09:00 - 20:00h | Sat: By Appointment",
+        "phone": "+34 919 898 700",
+        "email": "info@clinicadentaluniversitaria.com",
+        "coverage": "Serving patients across Moncloa, Aravaca, Argüelles, and Chamberí."
       },
       "bookingForm": {
-        "kicker": "FIRST APPOINTMENT",
-        "title": "Book Your Free 3D Diagnostics & Consultation",
-        "subtitle": "Reserve your appointment and lock in the 790€ special implant package price.",
-        "namePlaceholder": "Your Full Name",
-        "phonePlaceholder": "+34 600 000 000 or Phone Number",
-        "serviceSelect": "Select Service of Interest",
-        "dateLabel": "Preferred Appointment Date",
-        "submitBtn": "Confirm Diagnostic Appointment",
-        "successMsg": "Request received. Our clinical admin will call you shortly.",
-        "guaranteeText": "Your data is protected. Fixed 790€ rate reserved without advance payment."
+        "kicker": "ONLINE BOOKING",
+        "title": "Request Your Free Assessment Appointment",
+        "subtitle": "Includes initial diagnosis, 3D radiograph, and a fixed university cost estimate.",
+        "fieldName": "Full Name *",
+        "fieldPhone": "Phone Number *",
+        "fieldEmail": "Email Address",
+        "fieldService": "Treatment of Interest *",
+        "fieldDate": "Preferred Appointment Date",
+        "fieldComments": "Comments or specific questions",
+        "submitBtn": "Confirm Appointment Request",
+        "submitting": "Processing Request...",
+        "successTitle": "Request Received Successfully!",
+        "successDesc": "Our coordination team will contact you shortly from +34 919 898 700 to confirm your schedule.",
+        "note": "Your medical data is handled under strict confidential GDPR compliance."
       },
       "footer": {
-        "tagline": "Academic Dentistry in Madrid · Transparency, Precision & Care",
+        "brandDesc": "University Dental Clinic affiliated with EDE Posgrados and Universidad de La Salle. Ethical, social, and scientifically rigorous dental care in Madrid.",
+        "col1Title": "Treatments",
+        "col2Title": "Academic Assurance",
+        "col3Title": "Patient Care",
         "rights": "© 2026 Clínica Dental Universitaria. All rights reserved.",
-        "academicNote": "University Partner Base for Universidad de La Salle & EDE Posgrados Odontológicos.",
-        "developer": "Studio Test"
+        "developerCredit": "Desarrollado por Студія Тест"
       }
     }
   }
